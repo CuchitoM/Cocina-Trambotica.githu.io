@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    padding: px;
+    padding: 0px;
     background-color:black; 
     flex-wrap: wrap;
     flex-wrap: nowrap;
@@ -32,8 +32,13 @@ header {
     display: inline-flex;
     height: 80px;
     width: auto;
+    margin-top: 12px;
     justify-items: center;
     align-items: center;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 .texto {
@@ -95,6 +100,7 @@ header {
     background-color: rgb(8 , 81, 255);
     color: white;    
     border-color: rgb(8 , 81, 255);
+    
 }
 
 .redes-1 a .icon-in {
@@ -172,14 +178,15 @@ header {
     list-style: none;
     padding: 0;
     margin: auto;
-}    
+}
+    
 .alfajores li a {
     text-decoration: none;
     color: rgb(189, 146, 219);
     padding: 20px;
     display: block;
-
 }
+
 .alfajores li {
     display: inline-block;
     text-align: center;
@@ -187,6 +194,7 @@ header {
 
 .alfajores li a:hover {
     background-color: beige;
+    color: black;
 }
 .parrafo {
     color: baige;
@@ -197,10 +205,31 @@ header {
 }
 
 .contenedor {
+    flex-wrap: wrap;
     flex-wrap: nowrap;
-    width: 500px;
-    padding: 0 50px;
+    display: flex;
+    width: 50%;
     float: right;
+}
+
+.pag-contacto .pag1 {
+    text-align: center;
+    text-decoration: underline;  
+}
+
+.pag1 p {
+    text-align: center;
+}
+
+.caja-dimg {
+    width: 50%;
+    height: 50%;
+}
+
+.img-contacto {
+    width: 100%;
+    height: 100%;
+    margin-left: 50%;
 }
 
 .ingred {
@@ -215,66 +244,73 @@ header {
 }
 
 .pie-pagina {
-    flex-wrap: wrap;
-    flex-wrap: nowrap;
     width: 100%;
-    height: 100%;
+    height: 70%;
     background-color: black;
-    padding: 50px 50px; 
+    padding: 40px 0%; 
     font-family: 'Offside', cursive;
     color: beige;
 }
+
 .contenedores {
-    align-content: center;
-    padding: 0px 0%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pie-pagina .contenedores {
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: nowrap;
-    justify-content: space-between;
     justify-content: center;
 }   
  
 .pie-pagina .box-mapa {
     text-align: center;
-    justify-content: baseline;
 }
 
 .contenedores .box-redes {
 display: flex;
+flex-wrap: wrap;
+flex-wrap: nowrap;
 text-align: center;
 align-items: center;
-justify-content: center;
-margin: 0x 3px;
-text-align: center;
+justify-content: stretch;
+margin: 0x 10px;
+padding: 10% 10%;
 }
 
 .box-redes {
-    flex-wrap: wrap;
-    flex-wrap: nowrap;
-    border-radius: 50%;
+    display: inline-flex;
     text-align: center;
-}
-.box-redes a p {
-    text-align: center;
+    justify-content: space-between;
 }
 
 .box-redes a {
-    text-decoration: none;
     width: 40px;
     height: 40px;
     line-height: 40px;
     color: beige;
     margin-right: 8px;    
+    position: relative;
+    display: inline-block;  
     border-radius: 50%;
+    box-shadow: o 10px 10px  beige;
+    text-align: center;
+    text-decoration: none;
+}
+.box-redes a i {
+    font-size: 25px;
+    line-height: 30px;
+    align-items: center;
 }
 
 .fb {
     background-color: rgb(8 , 81, 255);
     
 }
+
 .fb:hover {
     background-color: rgb(8 , 81, 255);
     padding: 3px;
@@ -324,15 +360,13 @@ text-align: center;
 
 .box-mio img {
     display: inline-flex;
-    height: 108px;
+    height: 100px;
     width: auto;
-}    
- .box p { 
-    text-align: center;
-}
-
-.box-mio img{
     cursor: pointer;
+}    
+
+.box-mio img p {
+    text-align: center;
 }
 
 .pie-pagina .box-mio img:hover {
@@ -344,5 +378,4 @@ text-align: center;
     flex-wrap: nowrap;
     text-align: center;
     color: beige;
-    text-decoration: none;
 }
